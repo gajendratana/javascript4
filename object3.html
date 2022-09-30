@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>using new key word with  constructor function </h3>
+        <script>
+       // step:1 create a constructor function
+       function user(name,age,place){
+
+        this.name = name;
+        this.age = age;
+        this.place = place;
+       }   
+
+      // step:2 create a object with constructor function call
+       
+      let user1 = new user("gajendra",25,"tirupati")
+      
+      let user2 = new user("srinadh", 24 , "pathagunta")
+
+      document.write(user1.place)
+
+        </script>
+        
+    </body>
+</html>

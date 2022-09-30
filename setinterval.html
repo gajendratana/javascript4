@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>setInterval function in javscript?</h3>
+        <script>
+            var counter=0
+        
+        var x =  setInterval(myfunction,3000,"srinadh")
+        
+         
+            function myfunction(name){
+
+                alert("hellogajendra"+" "+counter+" "+name)
+                
+                counter++
+
+                if(counter>5){
+
+                clearInterval(x)
+              
+                }
+            }
+            myfunction()
+
+        </script>
+    </body>
+</html>

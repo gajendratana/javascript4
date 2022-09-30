@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Javascript Promises?</h3>
+        <p>A Promise is a javascript object it contain both producing code and consuming code </p>
+        <script>
+            let promise= new Promise(function(success,error){
+
+                let datacome = true;
+
+                if(datacome){
+                    success([1,2,3])
+                }
+                else
+                error("promise is not done")
+
+            })
+            promise.then(function(data){
+                console.log(data)
+            })
+
+            promise.catch(function(errordata){
+                console.log(errordata)
+            })
+        </script>
+    </body>
+</html>

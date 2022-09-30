@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <html>
+        <h3>async/await functions</h3>
+        <p>async function is always write a promises. <br>
+           it is used to fetch API calls.<br>
+           await function only valid in async functions.
+        </p>
+        <script>
+            async function user(){
+
+                return await " hello..";
+            }
+
+            console.log(user())
+
+            user().then(function(data){
+
+                document.write(data)
+
+            })
+            user().catch(function(errordata){
+                console.log(errordata)
+            })
+
+        </script>
+
+
+    </html>
+</html>

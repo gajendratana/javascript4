@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>Object create method()</h3>
+        <script>
+            function Person(fname,lname,age){
+                this.fname = fname;
+                this.lname = lname;
+                this.age = age;
+                this.fullname=  function() {
+                   return this.fname + " " + this.lname;
+                };
+            }
+         
+            const myFather = new Person("John", "Doe", 50);
+            const myMother = new Person("Sally", "Rally", 48);
+
+            document.write(myMother.fullname())
+
+        </script>
+    </body>
+</html>
